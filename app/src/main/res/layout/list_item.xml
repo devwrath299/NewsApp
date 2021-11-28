@@ -1,9 +1,52 @@
-<LinearLayout
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    app:cardElevation="10dp"
     android:layout_width="match_parent"
-    android:layout_height=""
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:maxLines="3"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/text_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:maxLines="1"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+    </LinearLayout>
 
 
-
-
-</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
