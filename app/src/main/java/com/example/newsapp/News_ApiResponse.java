@@ -1,8 +1,9 @@
 package com.example.newsapp;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class News_ApiResponse {
+public class News_ApiResponse implements Serializable {
 
     String status;
     int totalResults;

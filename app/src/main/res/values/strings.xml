@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">News App</string>
-    <String name="api">16877ff800d04626a4511af8fd1c2bd2</String>
+    <string name="api">16877ff800d04626a4511af8fd1c2bd2</string>
 </resources>

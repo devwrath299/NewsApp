@@ -1,6 +1,8 @@
 package com.example.newsapp;
 
-public class Source {
+import java.io.Serializable;
+
+public class Source implements Serializable {
 
     String  id=null;
     String name="";

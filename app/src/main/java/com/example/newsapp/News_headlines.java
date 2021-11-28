@@ -1,6 +1,8 @@
 package com.example.newsapp;
 
-public class News_headlines {
+import java.io.Serializable;
+
+public class News_headlines implements Serializable {
 
 
     public Source getSource() {

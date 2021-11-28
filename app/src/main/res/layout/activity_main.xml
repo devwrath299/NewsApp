@@ -7,6 +7,92 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+  <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn1"
+         android:text="business"
+        android:padding="6dp"
+        android:layout_margin="6dp"
+        android:textSize="12sp"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn2"
+          android:text="entertainment"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:textSize="12sp"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn3"
+          android:text="general"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:textSize="12sp"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn4"
+          android:text="health"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:textSize="12sp"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn5"
+          android:text="science"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:textSize="12sp"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn6"
+          android:text="sports"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:textSize="12sp"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn7"
+          android:text="technology"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:textSize="12sp"/>
+
+
+
+    </LinearLayout>
+
+
+  </HorizontalScrollView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:layout_margin="14dp"
+    app:cardElevation="8dp"
+      app:cardCornerRadius="10dp"
+   >
+  <androidx.appcompat.widget.SearchView
+      android:layout_width="match_parent"
+      app:defaultQueryHint="Search News..."
+      android:id="@+id/searchview"
+      app:iconifiedByDefault="false"
+      android:layout_height="?attr/actionBarSize"/>
+  </androidx.cardview.widget.CardView>
+
 
   <androidx.recyclerview.widget.RecyclerView
       android:layout_width="match_parent"
